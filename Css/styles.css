@@ -1,0 +1,396 @@
+
+body{
+    font-family: 'lora', sans-serif;
+    background-color: #f0f0f0;
+    color: black;
+}
+
+header {
+    background: #2d2d8f;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-left{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.title{
+    color: white;
+    font-size: 28px;
+}
+.logo{
+    background: #e06563;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    color: white;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transform: color 0.3s ease, text-decoration 0.3s ease;
+    box-sizing: border-box;
+    width: 100px;
+    font-size: 16px;
+
+}
+nav a:hover, nav a:focus{
+    text-decoration: underline;
+    color: #ddddff;
+
+
+}
+.nav-toggle{
+    color: white;
+    font-size: 1.5rem;
+}
+.nav-collapse {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+
+.about-consultant{ 
+    background: white;
+    padding: 40px 20px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.about-consultant h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    text-align: center;
+    color:  #2d2d8f;
+}
+
+.about-consultant p {
+    font-size: 16px;
+    color: black;
+    text-align: center;
+}
+
+
+.connect{
+    background: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    border-radius: 10px;
+}
+.connect h2{
+    color:  #2d2d8f;
+    font-size: 28px;
+}
+.connect form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+.connect input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.connect input:hover {
+    outline: 2px solid #d6504e; 
+}
+
+.connect button {
+    padding: 10px;
+    background-color: #d6504e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+.connect button:hover {
+    background: #2d2d8f; 
+}
+
+.footer{
+    text-align: center;
+    background-color: #2d2d8f;
+    color: white;
+    padding: 2px;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-contact{
+    text-align: left;
+}
+
+.footer-contact h3{
+    margin: bottom 10px;
+    color: white;
+    font-size: 18px;
+}
+.footer-contact p{
+    margin: 0;
+    color: white;
+    font-size: 16px;;
+}
+
+.footer-contact a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-contact a:hover{
+    text-decoration: underline;
+    color: #ddddff;
+}
+
+.image img{
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin: bottom 10px;
+}
+
+.services{ 
+    background: white;
+    padding: 40px 20px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.services h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color:#2d2d8f;
+}
+.services h2{
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #2d2d8f;
+
+}
+.services p {
+    font-size: 16px;
+    color: black;
+}
+.why-us {
+    background-color: white;
+    padding: 40px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 800px;
+    text-align: center;
+}
+
+.why-us h1 {
+    color: #2d2d8f;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.why-us ul {
+    list-style: none;
+    padding: 0;
+    font-size: 16px;
+    color: #555;
+}
+
+.why-us ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    color: black;
+}
+
+.faq{
+    background-color: white;
+    padding: 40px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.faq h2{
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #2d2d8f;
+    text-align: center;
+}
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-item h3 {
+    font-size: 18px;
+    color: #2d2d8f;
+    transition: color 0.3s ease;
+}
+
+.faq-item p {
+    font-size: 16px;
+    color: black;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+.faq-item a{
+    color: #2d2d8f;
+    text-decoration: none;
+    font-size: 16px;
+}
+.faq-item a:hover{
+    text-decoration: underline;
+    color: #e06563
+}
+.schedule{
+    background: #f4f4f4;
+    padding: 40px 20px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.schedule h1{
+    color: #2d2d8f;
+    margin: bottom 10px;
+    font-size: 28px;
+}
+
+.schedule p{
+    color: black;
+    font-size: 16px;
+    margin: bottom 10px;
+}
+
+.payment-info{
+    background-color:#f4f4f4;;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    color: #2d2d8f;
+    text-align: center;
+
+}
+.payment-info h2{
+    color: #2d2d8f;
+    margin: bottom 10px;
+    font-size: 18px;
+}
+.payment-info p{
+    color: black;
+    font-size: 16px;
+    margin: bottom 10px;
+}
+.policies{
+    background-color: #f4f4f4;;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    color: #2d2d8f;
+}
+.policies h1{
+    color: #2d2d8f;
+    font-size: 28px;
+    
+}
+.policies h2{
+    color: #2d2d8f;
+    font-size: 18px;
+}
+.policies p{
+    color: black;
+    font-size: 16px;
+    text-align: left;;
+}
+
+.button{
+    background: #e06563;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background 0.3s;
+    text-decoration: none;
+    text-align: center;
+}
+.button a {
+    text-decoration: none;
+    color: white;
+}
+.button:hover{
+    background: #2d2d8f;
+    transform: scale(1.05);
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    .nav-toggle {
+    display: none;
+    }
+
+    .nav-collapse {
+    max-height: none;
+    overflow: visible;
+    }
+
+    .nav-collapse ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    background: none;
+    list-style-type: none;
+    }
+
+    .nav-collapse li a {
+    padding: 0;
+    }
+.content{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    max-width: 1100px;
+    margin: 10px auto;
+    gap: 30px;
+}
+
+.connect {
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.about-consultant {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.services{ 
+    background: white;
+    padding: 40px 20px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.image{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.image img{
+    max-width: 90%;
+    height: auto;
+}
+
+}
